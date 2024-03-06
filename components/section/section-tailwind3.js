@@ -1,3 +1,6 @@
+
+//src: https://flowbite.com/blocks/marketing/feature/
+
 export function sectionTailwind3() {
     return `
 <hr>
@@ -5,9 +8,14 @@ export function sectionTailwind3() {
     <section id="services" class="bg-white dark:bg-gray-900">
   <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
       <div class="max-w-screen-md mb-8 lg:mb-16">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Designed for business teams like yours</h2>
-          <p class="text-gray-500 sm:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
-      </div>
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+<!--TITULO DA SEÇÃO-->
+          Serviços Prestados
+          </h2>
+          <p class="text-gray-500 sm:text-xl dark:text-gray-400">
+<!--SUBTITULO DA SEÇÃO-->
+          [breve texto sobre os serviços]
+          </div>
       <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
           <div>
               <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">

@@ -1,3 +1,4 @@
+// src: https://flowbite.com/docs/components/footer/
 export function footerTailwind1(){
     return `
         

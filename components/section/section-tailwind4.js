@@ -1,3 +1,5 @@
+//src: https://flowbite.com/docs/components/gallery/
+
 export function sectionTailwind4() {
     return `
 <hr>

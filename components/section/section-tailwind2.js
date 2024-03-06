@@ -1,3 +1,4 @@
+// src: https://flowbite.com/blocks/marketing/content/
 export function sectionTailwind2() {
     return `
 <hr>
