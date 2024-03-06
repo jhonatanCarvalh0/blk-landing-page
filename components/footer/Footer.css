@@ -1,9 +1,15 @@
+:root{
+    --cor-primaria: #020617;
+    --cor-secundaria: #e2e8f0;
+}
+
 footer {
-    background-color: rgba(255, 152, 108, 0.25);
+    background-color: var(--cor-primaria);
     display: flex;
     justify-content: space-between;
     gap: 80px;
     padding: 64px 80px;
+    color: var(--cor-secundaria)
 }
 
 footer img,
@@ -14,7 +20,7 @@ footer .titulo {
 }
 
 footer nav a {
-    color: #263138;
+    color: var(--cor-secundaria);
     display: block;
     margin-bottom: 16px;
     text-decoration: none;

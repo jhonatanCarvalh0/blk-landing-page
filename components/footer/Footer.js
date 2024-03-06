@@ -2,7 +2,6 @@ export function Footer(){
     return `
       <footer>
           <div>
-            <img src="../../img/logo.svg" alt="PetLife" />
             <p>
               Cuidado com amor, vivendo com alegria: PetLife, onde a vida dos pets é
               mais feliz!
@@ -37,6 +36,8 @@ export function Footer(){
       Desenvolvido por
       <a href="https://github.com/jhonatanCarvalh0" target="_blank"
         >@jhonatanCarvalh0</a
+      > e <a href="https://github.com/ffalves1998" target="_blank"
+        >@fernandaAlves</a
       >
     </div>
     `
