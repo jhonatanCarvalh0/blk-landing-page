@@ -4,10 +4,10 @@ import {sectionViewSeparator} from "../sectionViewSeparator.js";
 
 export function sectionTailwind4(showSectionSeparator) {
   return `
- ${sectionViewSeparator('section4', showSectionSeparator)}
+ ${sectionViewSeparator("section4", showSectionSeparator)}
     
 ${tag_filters()}
-<section id="gallery" class="grid grid-cols-2 md:grid-cols-4 gap-4 dark:bg-zinc-950 dark:text-white">
+<section id="gallery" class="grid grid-cols-2 md:grid-cols-4 gap-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 h-full dark:bg-zinc-950 dark:text-white"">
     <div class="grid gap-4">
         <div>
             <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
