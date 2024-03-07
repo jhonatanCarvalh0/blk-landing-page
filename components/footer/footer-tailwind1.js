@@ -8,34 +8,34 @@ export function footerTailwind1(showSectionSeparator){
 <footer class="bg-white dark:bg-zinc-900">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
-          <div class="mb-6 md:mb-0">
+          <div class="min-h-16 mb-6 md:mb-0">
               <a href="#inicio" class="flex items-center">
                   <img src="../../img/logo-branca.svg" class="h-16 me-3" alt="BLK Logo" />
                   <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
               </a>
           </div>
-          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div class="grid mx-10 grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
 <!--COLUNA 1-->
               <div>
-                  <h2 class="mb-6 text-sm font-semibold text-zinc-900 uppercase dark:text-white">Resources</h2>
+                  <h2 class="mb-6 text-sm font-semibold text-zinc-900 uppercase dark:text-white">[COLUNA 1]</h2>
                   <ul class="text-zinc-500 dark:text-zinc-400 font-medium">
                       <li class="mb-4">
-                          <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
+                          <a href="https://flowbite.com/" class="hover:underline">[LINK]</a>
                       </li>
                       <li>
-                          <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                          <a href="https://tailwindcss.com/" class="hover:underline">[LINK]</a>
                       </li>
                   </ul>
               </div>
 <!--COLUNA 2-->
               <div>
-                  <h2 class="mb-6 text-sm font-semibold text-zinc-900 uppercase dark:text-white">Redes Sociais</h2>
+                  <h2 class="mb-6 text-sm font-semibold text-zinc-900 uppercase dark:text-white">[COLUNA 2]</h2>
                   <ul class="text-zinc-500 dark:text-zinc-400 font-medium">
                       <li class="mb-4">
-                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Inglês</a>
+                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">[LINK]</a>
                       </li>
                       <li>
-                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">[LINK]</a>
                       </li>
                   </ul>
               </div>
@@ -52,7 +52,7 @@ export function footerTailwind1(showSectionSeparator){
       </div>
       <hr class="my-6 border-zinc-200 sm:mx-auto dark:border-zinc-700 lg:my-8" />
       <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-zinc-500 sm:text-center dark:text-zinc-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+          <span class="text-sm text-zinc-500 sm:text-center dark:text-zinc-400">© 2023 <a href="#inicio" class="hover:underline">BLK Engenharia™</a>. Todos os direitos reservados.
           </span>
           <div class="flex mt-4 sm:justify-center sm:mt-0">
               <a href="#" class="text-zinc-500 hover:text-zinc-900 dark:hover:text-white">
