@@ -1,12 +1,12 @@
 //src: https://flowbite.com/docs/components/gallery/
 
 export function sectionTailwind4() {
-    return `
+  return `
 <hr>
 <h1>SEÇÃO 4 - Galeria de fotos⬇️ </h1>
     
 
-<div id="gallery" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div id="gallery" class="grid grid-cols-2 md:grid-cols-4 gap-4 dark:bg-gray-800 dark:text-white">
     <div class="grid gap-4">
         <div>
             <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
@@ -54,5 +54,5 @@ export function sectionTailwind4() {
 </div>
 
 
-`
+`;
 }
