@@ -1,13 +1,14 @@
 // src: https://flowbite.com/blocks/marketing/content/
-export function sectionTailwind2() {
+import {sectionViewSeparator} from "../sectionViewSeparator.js";
+
+export function sectionTailwind2(showSectionSeparator) {
   return `
-<hr>
-<h1>SEÇÃO 2 - SOBRE NÓS⬇️ </h1>
-    <section id="about-us" class="bg-white dark:bg-gray-900">
+${sectionViewSeparator('section2', showSectionSeparator)}
+    <section id="about-us" class="bg-white dark:bg-zinc-950">
     <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
 <!--TITULO DA SEÇÃO-->
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-zinc-950 dark:text-white">
             Sobre Nós
             </h2>
             <p class="mb-4">[TEXTO DE APRESENTAÇÃO DA EQUIPE]</p>

@@ -1,8 +1,9 @@
-export function navbarTailwind1(){
+import {sectionViewSeparator} from "../sectionViewSeparator.js";
+
+export function navbarTailwind1(showSectionSeparator){
     return `
-<hr>
-<h1>BARRA DE NAVEGAÇÃO ⬇️ </h1>
-<nav class="bg-white border-gray-200 dark:bg-gray-900">
+ ${sectionViewSeparator('navbar', showSectionSeparator)}
+<nav class="bg-white border-zinc-200 dark:bg-zinc-900">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 <!--NAVBAR LOGO-->
     <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
