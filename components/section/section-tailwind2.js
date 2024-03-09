@@ -40,7 +40,7 @@ function nossaEquipe(){
       <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
           <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
               <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Nossa Equipe Técnica</h2>
-              <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Engneharia Civil, Arquitetura e Urbanismo, Engenharia Elétrica</p>
+              <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Engenharia Civil, Arquitetura e Urbanismo, Engenharia Elétrica</p>
           </div> 
           <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 ${teamMember('../../img/emerson.jpg', 'Emerson Thiago Ferreira da Silva', ['Engenheiro Civil', 'Gestor', 'CREA: 14903D/RO'])}
