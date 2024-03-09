@@ -44,7 +44,7 @@ function nossaEquipe(){
           </div> 
           <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 ${teamMember('', 'Emerson Thiago Ferreira da Silva', ['Engenheiro Civil', 'Gestor', 'CREA: 14903D/RO'])}
-                ${teamMember('', 'Paloma Nascimento', ['Arquiteta e Urbanista', 'CAU: A279906-5', 'BIM Manager'])}
+                ${teamMember('', 'Paloma Nascimento', ['Arquiteta e Urbanista', 'BIM Manager', 'CAU: A279906-5'])}
                 ${teamMember('', 'Ronaldo Luã Gabriel de Souza Pena', ['Engenheiro Eletricista', 'CREA: 17238D/RO'])}
                 ${teamMember('', 'Gustavo Portugal Ventura', ['Engenheiro Civil', 'Sócio Gestor', 'CREA: 18568D/RO'])}
           </div>  
@@ -53,7 +53,7 @@ function nossaEquipe(){
   `
 }
 
-function teamMember(urlFotoMembro = 'asd', nomeMembro = 'nome_membro', memberInfo = ['cargo & infos'], socialMedia = ['https://facebook.com', 'https://x.com', 'https://instagram.com', '#inicio']){
+function teamMember(urlFotoMembro = '', nomeMembro = 'nome_membro', memberInfo = ['cargo & infos'], socialMedia = ['https://facebook.com/@BLKEngenhariapvh', 'https://x.com', 'https://instagram.com/blk_engenharia', '#inicio']){
   if (!urlFotoMembro){
     urlFotoMembro = 'https://st3.depositphotos.com/9998432/13335/v/450/depositphotos_133352156-stock-illustration-default-placeholder-profile-icon.jpg'
   }
