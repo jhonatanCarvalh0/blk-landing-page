@@ -5,9 +5,8 @@ import {sectionTailwind4} from "./components/section/section-tailwind4.js";
 import {footerTailwind1} from "./components/footer/footer-tailwind1.js";
 import {navbarTailwind1} from "./components/navbar/navbar-tailwind1.js";
 import {sectionTailwind5} from "./components/section/section-tailwind5.js";
-import {sectionViewSeparator} from "./components/sectionViewSeparator.js";
 
-const showSectionSeparator = false;
+const showSectionSeparator = true;
 document.addEventListener('DOMContentLoaded', () => {
     document.body.innerHTML += navbarTailwind1(showSectionSeparator)  // navbar
     document.body.innerHTML += sectionTailwind1(showSectionSeparator) // hero page

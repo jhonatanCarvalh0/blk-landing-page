@@ -24,7 +24,7 @@ de obras civis
             </a> 
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="../../img/logo-branca.png" alt="mockup">
+            <img src="../../img/blk-logo-branca.png" alt="mockup">
         </div>                
     </div>
 </section>

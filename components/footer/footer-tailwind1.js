@@ -10,7 +10,7 @@ export function footerTailwind1(showSectionSeparator){
         <div class="md:flex md:justify-between">
           <div class="min-h-16 mb-6 md:mb-0">
               <a target="_blank" href="#inicio" class="flex items-center">
-                  <img src="../../img/logo-branca.png" class="h-16 me-3" alt="BLK Logo" />
+                  <img src="../../img/blk-logo-branca.png" class="h-16 me-3" alt="BLK Logo" />
                   <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
               </a>
           </div>
