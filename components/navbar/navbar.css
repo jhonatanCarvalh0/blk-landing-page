@@ -1,0 +1,12 @@
+#navbar-default {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+}
+
+@media (min-width: 1050px) {
+  #navbar-default {
+    top: calc(100% + 5px);
+  }
+}

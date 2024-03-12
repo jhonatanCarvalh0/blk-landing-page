@@ -51,3 +51,22 @@ export function navbar(showSectionSeparator) {
 </nav>
     `;
 }
+
+function setupNavbarToggle() {
+  const menuButton = document.getElementById("menuButton");
+  const navbar = document.getElementById("navbar-default");
+
+  menuButton.addEventListener("click", function () {
+    navbar.classList.toggle("hidden");
+  });
+
+  window.addEventListener("resize", function () {
+    if (window.innerWidth <= 1050) {
+      navbar.classList.add("hidden");
+    } else {
+      navbar.classList.remove("hidden");
+    }
+  });
+}
+
+window.addEventListener("DOMContentLoaded", setupNavbarToggle);
