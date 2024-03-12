@@ -39,7 +39,7 @@ export function missionValue(showSectionSeparator) {
             "reformas"
           )}
           ${generateServiceDiv(
-            "VALOR",
+            "VALORES",
             "Compromisso e comprometimento com o meio ambiente, com a ética profissional e com os nossos clientes e colaboradores. Aplicar as inovações sempre respeitando a sustentabilidade.",
             "terraplanagem"
           )}

@@ -1,5 +1,8 @@
-export function ourTeam(){
+import {sectionViewSeparator} from "../sectionViewSeparator.js";
+
+export function ourTeam(showSectionSeparator){
     return `
+        ${sectionViewSeparator('section1', showSectionSeparator)}
         ${nossaEquipe()}
     `
 }

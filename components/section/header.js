@@ -3,7 +3,7 @@ import {sectionViewSeparator} from "../sectionViewSeparator.js";
 
 export function header(showSectionSeparator) {
     return `
-${sectionViewSeparator('section1', showSectionSeparator)}
+    ${sectionViewSeparator('section1', showSectionSeparator)}
     <section id="home" class="bg-white dark:bg-zinc-950">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div class="mr-auto place-self-center lg:col-span-7">
@@ -24,7 +24,7 @@ de obras civis
             </a> 
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="../../img/blk-logo-branca.png" alt="mockup">
+            <img src="../../img/logos-blk/blk-logo-branca.png" alt="mockup">
         </div>                
     </div>
 </section>
