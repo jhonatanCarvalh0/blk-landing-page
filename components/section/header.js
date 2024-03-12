@@ -1,7 +1,7 @@
 //src: https://flowbite.com/blocks/marketing/hero/
 import {sectionViewSeparator} from "../sectionViewSeparator.js";
 
-export function sectionTailwind1(showSectionSeparator) {
+export function header(showSectionSeparator) {
     return `
 ${sectionViewSeparator('section1', showSectionSeparator)}
     <section id="home" class="bg-white dark:bg-zinc-950">

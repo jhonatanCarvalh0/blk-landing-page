@@ -29,7 +29,7 @@ function generateServiceDiv(service, description, iconName){
 }
 
 
-export function sectionTailwind3(showSectionSeparator) {
+export function ourServices(showSectionSeparator) {
     return `
     ${sectionViewSeparator('section3', showSectionSeparator)}
     <section id="services" class="bg-white dark:bg-zinc-950">

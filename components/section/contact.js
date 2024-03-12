@@ -2,7 +2,7 @@
 
 import {sectionViewSeparator} from "../sectionViewSeparator.js";
 
-export function sectionTailwind5(showSectionSeparator){
+export function contact(showSectionSeparator){
     return `
     ${sectionViewSeparator('section5', showSectionSeparator)}
   <section id="contact-us" class="bg-white dark:bg-zinc-950">

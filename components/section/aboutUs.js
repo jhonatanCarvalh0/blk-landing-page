@@ -2,7 +2,7 @@
 // src2: https://flowbite.com/blocks/marketing/team/
 import {sectionViewSeparator} from "../sectionViewSeparator.js";
 
-export function sectionTailwind2(showSectionSeparator) {
+export function aboutUs(showSectionSeparator) {
   return `
     ${sectionViewSeparator('section2', showSectionSeparator)}
     ${sobreNos()}

@@ -2,7 +2,7 @@
 
 import {sectionViewSeparator} from "../sectionViewSeparator.js";
 
-export function sectionTailwind4(showSectionSeparator) {
+export function gallery(showSectionSeparator) {
   return `
  ${sectionViewSeparator("section4", showSectionSeparator)}
     

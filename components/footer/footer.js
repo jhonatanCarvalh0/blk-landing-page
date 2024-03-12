@@ -1,7 +1,7 @@
 // src: #docs/components/footer/
 import {sectionViewSeparator} from "../sectionViewSeparator.js";
 
-export function footerTailwind1(showSectionSeparator){
+export function footer(showSectionSeparator){
     return `
         
  ${sectionViewSeparator('section6', showSectionSeparator)}
