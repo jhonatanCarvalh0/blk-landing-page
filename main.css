@@ -1,5 +1,6 @@
 @import url("./components/section/Section.css");
 @import url("./components/footer/Footer.css");
+
 :root{
     --main-color: #08090d;
     --secondary-color: #2c2e33;
@@ -23,4 +24,3 @@ h2 {
     font-size: 32px;
     margin-bottom: 32px;
 }
-

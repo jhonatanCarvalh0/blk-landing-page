@@ -18,30 +18,30 @@ export function navbar(showSectionSeparator) {
       </svg>
     </button>
 <!--NAVLINKS-->
-    <div class="hidden lg:flex items-center justify-center md:justify-end w-full md:w-auto" id="navbar-default">
-      <ul class="font-medium flex flex-row space-x-8 p-4 md:p-0 mt-4 md:mt-0 rounded-lg bg-zinc-50 md:bg-transparent dark:bg-zinc-800 md:dark:bg-transparent dark:border-zinc-700">
+    <div id="navbar-default" class="hidden lg:flex items-center justify-center md:justify-end w-full md:w-auto">
+          <ul class="font-medium flex flex-row space-x-8 space-y-3 p-4 md:p-0 mt-4 md:mt-0 rounded-lg bg-zinc-50 md:bg-transparent dark:bg-zinc-800 md:dark:bg-transparent dark:border-zinc-700">
         <li>
-            <a href="#home" class="text-zinc-900 py-2 px-3 rounded hover:bg-zinc-100 md:hover:bg-zinc-100 dark:text-white md:dark:hover:text-zinc-800 dark:hover:bg-zinc-100">
+            <a href="#home" class="text-zinc-900 py-2 px-3 rounded hover:bg-zinc-100 md:hover:bg-zinc-900 hover:text-black dark:text-white md:dark:hover:text-zinc-800 dark:hover:bg-zinc-900">
                 Quem somos
             </a>
         </li>
         <li>
-            <a href="#about-us" class="text-zinc-900 py-2 px-3 rounded hover:bg-zinc-100 md:hover:bg-zinc-100 dark:text-white md:dark:hover:text-zinc-800 dark:hover:bg-zinc-100">
+            <a href="#about-us" class="text-zinc-900 py-2 px-3 rounded hover:bg-zinc-100 md:hover:bg-zinc-100 dark:text-white md:dark:hover:text-zinc-800 dark:hover:bg-zinc-900">
                 Nossos serviços
             </a>
         </li>
         <li>
-            <a href="#services" class="text-zinc-900 py-2 px-3 rounded hover:bg-zinc-100 md:hover:bg-zinc-100 dark:text-white md:dark:hover:text-zinc-800 dark:hover:bg-zinc-100">
+            <a href="#services" class="text-zinc-900 py-2 px-3 rounded hover:bg-zinc-100 md:hover:bg-zinc-100 dark:text-white md:dark:hover:text-zinc-800 dark:hover:bg-zinc-900">
                 Nossas Obras
             </a>
         </li>
         <li>
-            <a href="#gallery" class="text-zinc-900 py-2 px-3 rounded hover:bg-zinc-100 md:hover:bg-zinc-100 dark:text-white md:dark:hover:text-zinc-800 dark:hover:bg-zinc-100">
+            <a href="#gallery" class="text-zinc-900 py-2 px-3 rounded hover:bg-zinc-100 md:hover:bg-zinc-100 dark:text-white md:dark:hover:text-zinc-800 dark:hover:bg-zinc-900">
                 Nossas Reformas
             </a>
         </li>
         <li>
-            <a href="#contact-us" class="text-zinc-900 py-2 px-3 rounded hover:bg-zinc-100 md:hover:bg-zinc-100 dark:text-white md:dark:hover:text-zinc-800 dark:hover:bg-zinc-100">
+            <a href="#contact-us" class="text-zinc-900 py-2 px-3 rounded hover:bg-zinc-100 md:hover:bg-zinc-100 dark:text-white md:dark:hover:text-zinc-800 dark:hover:bg-zinc-900">
                 Contatos
             </a>
         </li>
@@ -55,16 +55,33 @@ export function navbar(showSectionSeparator) {
 function setupNavbarToggle() {
   const menuButton = document.getElementById("menuButton");
   const navbar = document.getElementById("navbar-default");
+  const navLinks = navbar.querySelector("ul"); // Obtem a <ul> dentro de #navbar-default
 
   menuButton.addEventListener("click", function () {
     navbar.classList.toggle("hidden");
+    // Verifica se o menu está agora visível
+    if (!navbar.classList.contains("hidden")) {
+      // Aplica classes para exibição vertical e centralizada
+      navLinks.classList.add("flex-col", "items-center", "justify-center");
+      navLinks.classList.remove("lg:flex-row", "space-x-8");
+    } else {
+      // Reverte para o layout original quando o menu é escondido
+      navLinks.classList.remove("flex-col", "items-center", "justify-center");
+      navLinks.classList.add("lg:flex-row", "space-x-8");
+    }
   });
 
   window.addEventListener("resize", function () {
     if (window.innerWidth <= 1050) {
       navbar.classList.add("hidden");
+      // Garante que o menu reverta ao estado original em telas menores
+      navLinks.classList.remove("flex-col", "items-center", "justify-center");
+      navLinks.classList.add("lg:flex-row", "space-x-8");
     } else {
+      // Assegura que o layout se mantenha consistente em telas maiores
       navbar.classList.remove("hidden");
+      navLinks.classList.remove("flex-col", "items-center", "justify-center");
+      navLinks.classList.add("lg:flex-row", "space-x-8");
     }
   });
 }
