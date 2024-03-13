@@ -4,7 +4,7 @@ import imagesURL from "../../service/imageService.js";
 export function carousel(category = 'obrasResidenciais'){
     return `
 <h1 style="background-color: #f1f5f9; color: #0f172a">[[INICIO]]Teste de carrosel de imagens para aplicar a filtros</h1>
-<div id="custom-controls-gallery" class="relative w-full grid gap-4 px-6" data-carousel="slide">
+<div id="custom-controls-gallery" class="relative w-full grid gap-4 px-16" data-carousel="slide">
     ${generateCarouselWrapper(category)}
     ${generateSliderIndicators(category)}
 </div>
