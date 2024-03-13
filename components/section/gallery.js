@@ -8,8 +8,10 @@ export function gallery(showSectionSeparator) {
  ${sectionViewSeparator("section4", showSectionSeparator)}
     
 ${tag_filters()}
-<section id="gallery" class="grid grid-cols-2 px-6 md:grid-cols-3 gap-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 h-full dark:bg-zinc-950 dark:text-white"">
-</section>
+<div>
+    <section id="gallery" class="grid grid-cols-2 px-6 md:grid-cols-3 gap-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 h-full dark:bg-zinc-950 dark:text-white"">
+    </section>
+</div>
 
 `;
 }
@@ -21,22 +23,26 @@ function tag_filters(){
       type="button" 
       data-category="all" 
       class="text-zinc-950 border border-white hover:border-zinc-200 dark:border-zinc-950 dark:bg-zinc-800 dark:hover:border-zinc-700 bg-white focus:ring-4 focus:outline-none focus:ring-zinc-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-zinc-800">
-      Todas as categorias</button>
+      Todas as categorias
+      </button>
       <button 
       type="button" 
-      data-category="residential works" 
+      data-category="obrasResidenciais" 
       class="text-zinc-950 border border-white hover:border-zinc-200 dark:border-zinc-950 dark:bg-zinc-800 dark:hover:border-zinc-700 bg-white focus:ring-4 focus:outline-none focus:ring-zinc-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-zinc-800">
-      Obras residenciais</button>
+      Obras residenciais
+      </button>
       <button 
       type="button" 
-      data-category="home renovation" 
+      data-category="reformasResidenciais" 
       class="text-zinc-950 border border-white hover:border-zinc-200 dark:border-zinc-950 dark:bg-zinc-800 dark:hover:border-zinc-700 bg-white focus:ring-4 focus:outline-none focus:ring-zinc-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-zinc-800">
-      Reformas residenciais</button>
+      Reformas residenciais
+      </button>
       <button 
       type="button" 
-      data-category="commercial renovation"
+      data-category="reformasComerciais"
       class="text-zinc-950 border border-white hover:border-zinc-200 dark:border-zinc-950 dark:bg-zinc-800 dark:hover:border-zinc-700 bg-white focus:ring-4 focus:outline-none focus:ring-zinc-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-zinc-800">
-      Reformas Comerciais</button>
+      Reformas Comerciais
+      </button>
     </div>
   `
 }
@@ -108,28 +114,31 @@ function generateImageElements(imageType, imageQtd) {
 
 export function galleryEventListener(id){
     const gallerySection = document.getElementById(id);
-    console.log(gallerySection)
-    gallerySection.innerHTML = `${generateImageElements('obrasResidenciais', 3)}
+    gallerySection.innerHTML = `
+    ${generateImageElements('obrasResidenciais', 3)}
     ${generateImageElements('reformasComerciais', 3)}
-    ${generateImageElements('reformasResidenciais', 3)}`
-
-    document.addEventListener('DOMContentLoaded', () => {
-        document.querySelectorAll('#filterButtons button').forEach(button => {
+    ${generateImageElements('reformasResidenciais', 3)}
+    `
+        const selectAllButtons = document.querySelectorAll("button")
+        console.log(selectAllButtons)
+        selectAllButtons.forEach(button => {
             button.addEventListener('click', function() {
                 const category = this.dataset.category;
-
-                console.log('Categoria selecionada:', category); // Log para verificar a categoria selecionada
-
                 gallerySection.innerHTML = '';
-
-                console.log('Imagens existentes removidas.'); // Log para verificar a remoção das imagens existentes
-
-                gallerySection.innerHTML = generateImageElements(category, 4);
+                if (category !== 'all') {
+                    gallerySection.innerHTML = generateImageElements(category, 4);
+                }else{
+                    gallerySection.innerHTML = `
+                    ${generateImageElements('obrasResidenciais', 3)}
+                    ${generateImageElements('reformasComerciais', 3)}
+                    ${generateImageElements('reformasResidenciais', 3)}
+                    `
+                }
 
                 console.log('Novas imagens geradas.'); // Log para verificar a geração das novas imagens
             });
         });
-    });
+
 }
 
 
