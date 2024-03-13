@@ -120,7 +120,6 @@ export function galleryEventListener(id){
     ${generateImageElements('reformasResidenciais', 3)}
     `
         const selectAllButtons = document.querySelectorAll("button")
-        console.log(selectAllButtons)
         selectAllButtons.forEach(button => {
             button.addEventListener('click', function() {
                 const category = this.dataset.category;
