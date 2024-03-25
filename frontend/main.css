@@ -1,0 +1,36 @@
+@import url("./src/components/gallery/galleryCarousel2.css");
+@import url("./src/components/section/Section.css");
+@import url("./src/components/footer/Footer.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-color: #08090d;
+  --secondary-color: #2c2e33;
+  --third-color: #f1f5f9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  color: var(--main-color);
+  background-color: #08090d;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.container {
+  max-width: 1280px;
+}

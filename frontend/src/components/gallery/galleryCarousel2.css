@@ -1,0 +1,129 @@
+img {
+    vertical-align: middle; /* Alinha imagens verticalmente ao meio em relação ao seu container */
+}
+
+.container {
+    position: relative; /* Permite o posicionamento absoluto dos botões de navegação dentro do container */
+    max-width: 1280px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+.container #allSlides {
+    max-height: 576px;
+}
+
+.mySlides {
+    position: relative;
+    display: none; /* Oculta todas as slides por padrão */
+}
+
+.mySlides img {
+    border-radius: 2vw;
+    width: 1280px;
+    height: 576px;
+    object-fit: cover;
+    margin-left: auto;
+}
+.mySlides .numbertext {
+    color: #f2f2f2; /* Cor do texto */
+    font-size: 12px; /* Tamanho do texto */
+    padding: 8px 12px; /* Espaçamento interno */
+    position: absolute; /* Posicionamento absoluto */
+    bottom: 8px; /* Posiciona a 8px da parte inferior do contêiner da imagem */
+    left: 50%; /* Posiciona no meio horizontalmente */
+    transform: translateX(-50%)  /* Ajusta para centralizar exatamente no meio */
+}
+
+.cursor {
+    cursor: pointer; /* Muda o cursor para pointer para indicar que algo é clicável */
+}
+
+.galleryNavButtons {
+    position: absolute;
+    width: 100%; /* Assumindo que a .container tem position: relative; */
+    top: 0;
+    height: 100%; /* Faz com que ocupe toda a altura da .container */
+    display: flex;
+    align-items: center; /* Centraliza os botões verticalmente */
+    justify-content: space-between; /* Espaça os botões horizontalmente */
+    max-width: 1280px;
+}
+
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%; /* Centralizado verticalmente, ajustado para centralizar com transform */
+    transform: translateY(-200%); /* Ajuste fino para centralização vertical */
+    width: 48px; /* Largura fixa */
+    height: 48px; /* Altura fixa para garantir um círculo perfeito */
+    line-height: 48px; /* Ajusta a altura da linha para centralizar o texto verticalmente */
+    padding: 0; /* Removido para garantir que width e height controlem o tamanho */
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center; /* Certifica que o texto esteja centralizado */
+    margin-top: 0; /* Removido, já que estamos usando transform para centralização */
+    user-select: none; /* Impede a seleção do texto dos botões */
+    border-radius: 50%; /* Arredondamento para começar como um círculo */
+}
+
+.next {
+    right: 0;
+}
+
+.previous:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Adiciona feedback visual ao passar o mouse */
+}
+
+
+.caption-container {
+    text-align: center;
+    padding: 2px 16px;
+    margin-top: 10px;
+}
+
+.caption-container #caption {
+    color: #e2e8f0;
+}
+
+.row {
+    display: flex;
+    align-content: center;
+
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both; /* Limpa floats para garantir que a .row contenha seus elementos filhos flutuantes */
+}
+
+.column {
+    float: left;
+    width: 16.66%; /* Distribui igualmente o espaço horizontal para miniaturas */
+    margin-inline-start: 5px;
+    margin-inline-end: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.column img {
+    box-sizing: border-box; /* Adicione esta linha */
+    border-radius: 1vw;
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.demo {
+    opacity: 0.6; /* Define uma opacidade inicial para miniaturas para indicar inatividade */
+    border-radius: 1vw
+}
+
+.active, .demo:hover {
+    opacity: 1; /* Aumenta a opacidade ao passar o mouse ou quando a miniatura está ativa */
+}
