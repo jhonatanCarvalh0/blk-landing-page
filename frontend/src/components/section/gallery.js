@@ -54,7 +54,7 @@ function tag_filters(){
   `
 }
 
-export function galleryEventListener(id='gallery'){
+export function galleryEventListener(id='galleryPhotos'){
     const gallerySection = document.getElementById(id)
     gallerySection.innerHTML = galleryMasonry();
 
