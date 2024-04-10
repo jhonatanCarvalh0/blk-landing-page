@@ -33,30 +33,30 @@ export function ourServices(showSectionSeparator) {
     return `
     ${sectionViewSeparator('section3', showSectionSeparator)}
     <section id="services" class="bg-white dark:bg-zinc-950">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-      <div class="max-w-screen-md mb-8 lg:mb-16">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-zinc-950 dark:text-white">
-            <!--TITULO DA SEÇÃO-->
-            NOSSOS SERVIÇOS
-          </h2>
-          <p class="text-gray-500 sm:text-xl dark:text-gray-400">
-            <!--SUBTITULO DA SEÇÃO-->
-            Soluções que podemos oferecer
-          </p>
+          <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+              <div class="max-w-screen-md mb-8 lg:mb-16">
+                  <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-zinc-950 dark:text-white">
+                    <!--TITULO DA SEÇÃO-->
+                    NOSSOS SERVIÇOS
+                  </h2>
+                  <p class="text-gray-500 sm:text-xl dark:text-gray-400">
+                    <!--SUBTITULO DA SEÇÃO-->
+                    Soluções que podemos oferecer
+                  </p>
+                  </div>
+              <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+                  ${generateServiceDiv('Execução de Obras', 'Realizamos construções civis com eficiência e qualidade.', 'obras')}
+                  ${generateServiceDiv('Execução de Reformas', 'Transformamos espaços, garantindo renovação e funcionalidade.', 'reformas')}
+                  ${generateServiceDiv('Execução de Terraplanagem', 'Preparamos o terreno para sua construção com precisão e segurança.', 'terraplanagem')}
+                  ${generateServiceDiv('Montagem Industrial', 'Instalamos e montamos estruturas industriais com eficácia.', 'industrial')}
+                  
+                  ${generateServiceDiv('Projetos', 'Desenvolvemos projetos arquitetônicos e estruturais inovadores.', 'projetos')}
+                  ${generateServiceDiv('Gerenciamento', 'Gerimos seu projeto do início ao fim, assegurando sucesso e qualidade.', 'gerenciamento')}
+                  ${generateServiceDiv('Planejamento', ' Planejamos meticulosamente cada etapa do seu projeto para garantir a eficiência.', 'planejamento')}
+                  ${generateServiceDiv('Orçamento', 'Fornecemos estimativas detalhadas, ajudando a manter seu projeto dentro do orçamento.', 'orcamento')}
+                  
+              </div>
           </div>
-      <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
-          ${generateServiceDiv('Execução de Obras', 'Realizamos construções civis com eficiência e qualidade.', 'obras')}
-          ${generateServiceDiv('Execução de Reformas', 'Transformamos espaços, garantindo renovação e funcionalidade.', 'reformas')}
-          ${generateServiceDiv('Execução de Terraplanagem', 'Preparamos o terreno para sua construção com precisão e segurança.', 'terraplanagem')}
-          ${generateServiceDiv('Montagem Industrial', 'Instalamos e montamos estruturas industriais com eficácia.', 'industrial')}
-          
-          ${generateServiceDiv('Projetos', 'Desenvolvemos projetos arquitetônicos e estruturais inovadores.', 'projetos')}
-          ${generateServiceDiv('Gerenciamento', 'Gerimos seu projeto do início ao fim, assegurando sucesso e qualidade.', 'gerenciamento')}
-          ${generateServiceDiv('Planejamento', ' Planejamos meticulosamente cada etapa do seu projeto para garantir a eficiência.', 'planejamento')}
-          ${generateServiceDiv('Orçamento', 'Fornecemos estimativas detalhadas, ajudando a manter seu projeto dentro do orçamento.', 'orcamento')}
-          
-      </div>
-  </div>
-</section>
+    </section>
 `
 }

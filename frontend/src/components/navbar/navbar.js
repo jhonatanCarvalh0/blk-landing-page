@@ -23,27 +23,27 @@ export function navbar(showSectionSeparator) {
         <ul class="font-medium flex flex-row space-x-8 p-4 mt-6 py-2 mt-4 lg:mt-0 lg:dark:bg-transparent rounded-lg bg-zinc-50 dark:bg-zinc-800 gap-3 dark:border-zinc-700">
           <li>
               <a href="#home" class="text-zinc-900 py-2 px-3 rounded hover:bg-zinc-100 md:hover:bg-zinc-700 hover:text-black dark:text-white md:dark:hover:text-zinc-700 dark:hover:bg-zinc-300">
-                  Quem somos
+                  Home
               </a>
           </li>
           <li>
               <a href="#about-us" class="text-zinc-900 py-2 px-3 rounded hover:bg-zinc-100 md:hover:bg-zinc-100 dark:text-white md:dark:hover:text-zinc-700 dark:hover:bg-zinc-300">
-                  Nossos serviços
+                  Quem somos
               </a>
           </li>
           <li>
               <a href="#services" class="text-zinc-900 py-2 px-3 rounded hover:bg-zinc-100 md:hover:bg-zinc-100 dark:text-white md:dark:hover:text-zinc-700 dark:hover:bg-zinc-300">
-                  Nossas Obras
+                  Nossos serviços
               </a>
           </li>
           <li>
               <a href="#gallery" class="text-zinc-900 py-2 px-3 rounded hover:bg-zinc-100 md:hover:bg-zinc-100 dark:text-white md:dark:hover:text-zinc-700 dark:hover:bg-zinc-300">
-                  Nossas Reformas
+                  Nossos trabalhos
               </a>
           </li>
           <li>
               <a href="#contact-us" class="text-zinc-900 py-2 px-3 rounded hover:bg-zinc-100 md:hover:bg-zinc-100 dark:text-white md:dark:hover:text-zinc-700 dark:hover:bg-zinc-300">
-                  Contatos
+                  Contato
               </a>
           </li>
       </ul>
