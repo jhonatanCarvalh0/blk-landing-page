@@ -12,11 +12,13 @@ import {
 
 export function gallery(showSectionSeparator) {
   return `
-  
+    
     ${sectionViewSeparator("section4", showSectionSeparator)}
-    ${tag_filters()}
     <section id="gallery">
-        
+        ${tag_filters()}
+        <div id="galleryPhotos">
+            
+        </div>
     </section>
 `;
 }
