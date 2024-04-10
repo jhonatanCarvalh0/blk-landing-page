@@ -10,7 +10,7 @@ window.sendMail = async (event) => {
     const subject = form.subject.value;
     const message = form.message.value;
 
-    const response = await fetch('http://localhost:3000/send-mail', {
+    const response = await fetch('/api/send-mail', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

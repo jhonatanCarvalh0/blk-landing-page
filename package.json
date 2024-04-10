@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "backend": "cd backend && npm i && node server.js",
+    "backend": "cd api && npm i && node server.js",
     "frontend": "cd frontend && npm i && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
