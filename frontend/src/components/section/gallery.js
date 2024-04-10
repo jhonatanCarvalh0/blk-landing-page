@@ -25,7 +25,7 @@ export function gallery(showSectionSeparator) {
 
 function tag_filters(){
   return `
-    <div class="flex items-center justify-center py-4 md:py-8 dark:bg-zinc-950 flex-wrap" id="filterButtons">
+    <div class="flex items-center justify-center dark:bg-zinc-950 flex-wrap" id="filterButtons">
       <button 
       type="button" 
       data-category="all" 
