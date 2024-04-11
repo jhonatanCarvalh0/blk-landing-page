@@ -1,8 +1,8 @@
 //src: https://flowbite.com/docs/components/gallery/
 
 import { sectionViewSeparator } from "../sectionViewSeparator.js";
-import imagesURL from "../../service/imageService.js";
-import imgObraResidenciais from "../../img/portifolio-blk/imagensSelecionadas/obrasResidenciais/index.js";
+import jpgImagesURL from "../../service/imageServiceJpg.js";
+import webpImagesURL from "../../service/imageServiceWebp.js";
 
 export function galleryMasonry(showSectionSeparator) {
   return `
@@ -15,28 +15,32 @@ export function galleryMasonry(showSectionSeparator) {
 `;
 }
 
-function image_add(srcURL) {
+function generatePictureElement(rcURL_jpeg, srcURL_webp) {
   return `
         <div class="inline-block image-container">
-            <img class="h-auto max-w-full rounded-lg object-cover object-center" src=${srcURL} alt="">
-<!--            <img src="${imgObraResidenciais}" alt="">-->
+                <picture>
+                <source class="h-auto max-w-full rounded-lg object-cover object-center" srcset="${srcURL_webp}" type="image/webp">
+                <img class="h-auto max-w-full rounded-lg object-cover object-center" src="${srcURL_jpeg}" alt="">
+            </picture>
         </div>
     `;
 }
 
 function generateImageElements(imageType, imageQtd) {
-  let imagesHTML = "";
-  const imageTypeArray = imagesURL[imageType];
+    let imagesHTML = "";
+    const imageTypeArrayJpeg = jpgImagesURL[imageType];
+    const imageTypeArrayWebp = webpImagesURL[imageType];
 
-  let count = 0;
+    let count = 0;
 
-  for (const key in imageTypeArray) {
-    if (count < imageQtd && Object.hasOwnProperty.call(imageTypeArray, key)) {
-      const imageURL = imageTypeArray[key];
-      imagesHTML += image_add(imageURL);
-      count += 1;
+    for (const key in imageTypeArrayJpeg) {
+        if (count < imageQtd && Object.hasOwnProperty.call(imageTypeArrayJpeg, key)) {
+            const imageWebpURL = imageTypeArrayWebp[key];
+            const imageJpegURL = imageTypeArrayJpeg[key];
+            imagesHTML += generatePictureElement(imageJpegURL, imageWebpURL);
+            count += 1;
+        }
     }
-  }
 
-  return `<div class="grid gap-4">${imagesHTML}</div>`;
+    return `<div class="grid gap-4">${imagesHTML}</div>`;
 }

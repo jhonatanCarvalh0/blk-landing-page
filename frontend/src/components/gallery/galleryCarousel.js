@@ -1,4 +1,4 @@
-import imagesURL from "../../service/imageService.js";
+import jpgImagesURL from "../../service/imageServiceJpg.js";
 
 export function galleryCarousel(category = "obrasResidenciais") {
   return `
@@ -20,7 +20,7 @@ function generateCarouselItem(srcURL) {
 function generateCarouselWrapper(category) {
   if (category !== "all") {
     let carouselImageItensHTML = ``;
-    const imageCategoryURLArray = imagesURL[category];
+    const imageCategoryURLArray = jpgImagesURL[category];
 
     for (const imageCategoryURL in imageCategoryURLArray) {
       if (Object.hasOwnProperty.call(imageCategoryURLArray, imageCategoryURL)) {
@@ -57,7 +57,7 @@ function generateIndicators(categoryArray) {
 }
 
 function generateSliderIndicators(category) {
-  const categoryArray = imagesURL[category];
+  const categoryArray = jpgImagesURL[category];
   const gridSize = Object.keys(categoryArray).length;
   return `
          <!--  Slider indicators -->

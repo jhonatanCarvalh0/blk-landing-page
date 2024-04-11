@@ -6,7 +6,9 @@
   "scripts": {
     "backend": "cd api && npm i && node server.js",
     "frontend": "cd frontend && npm i && npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "optimize-images": "imagemin 'frontend/src/img/**/*.{jpg,jpeg,png}' --out-dir='frontend/dist/img' --plugin=webp",
+    "build": "vite build && npm run optimize-images"
   },
   "keywords": [],
   "author": "",

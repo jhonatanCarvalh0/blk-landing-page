@@ -1,4 +1,5 @@
-import imagesURL from "../../service/imageService.js";
+import jpgImagesURL from "../../service/imageServiceJpg.js";
+import webpImagesURL from "../../service/imageServiceWebp.js";
 
 export function galleryCarousel2(category = 'obrasResidenciais'){
     console.log('inside galleryCarousel2')
@@ -56,15 +57,20 @@ function currentSlide(n) {
 
 function generateImageContent(category){
     let htmlContent = ``;
-    let images = Object.values(imagesURL[category])
-    let qtd = images.length; // obtem a quantidade de imagens
+    let jpgImages = Object.values(jpgImagesURL[category])
+    let webpImages = Object.values(webpImagesURL[category])
+    let qtd = jpgImages.length; // obtem a quantidade de imagens
 
     for (let i = 0; i < qtd; i++) {
-        let imageUrl = images[i]; // obtém a URL da imagem
+        let imageUrl = jpgImages[i]; // obtém a URL da imagem jpg
+        let webpImageUrl = webpImages[i]; // obtem URL da imagem webp
         htmlContent +=`
                 <div class="mySlides">
                     <div class="numbertext">${i+1} / ${qtd}</div>
-                    <img src="${imageUrl}" style="width:100%" alt="">
+                    <picture>
+                      <source srcset="${webpImageUrl}" type="image/webp">
+                      <img src="${imageUrl}" style="width:100%" alt="">
+                    </picture>
                 </div>
             `
     }
@@ -74,20 +80,25 @@ function generateImageContent(category){
 
 function  generateRowImageIndicators(category){
     let htmlRowContent = ``;
-    let images = Object.values(imagesURL[category])
-    let qtd = images.length; // obtem a quantidade de imagens
+    let jpgImages = Object.values(jpgImagesURL[category])
+    let webpImages = Object.values(webpImagesURL[category])
+    let qtd = jpgImages.length; // obtem a quantidade de imagens
 
     for (let i = 0; i < qtd; i++) {
-        let imageUrl = images[i];
+        let imageUrl = jpgImages[i];
+        let webpImageUrl = webpImages[i];
         htmlRowContent +=`
         <div class="column">
-            <img 
-            class="demo cursor" 
-            src="${imageUrl}" 
-            style="width:100%" 
-            data-slide-number="${i+1}"
-            id="thumbnail-${i+1}"
-            alt="The Woods ${i+1}">
+            <picture>
+                <source srcset="${webpImageUrl}" type="image/webp">
+                <img 
+                class="demo cursor" 
+                src="${imageUrl}" 
+                style="width:100%" 
+                data-slide-number="${i+1}"
+                id="thumbnail-${i+1}"
+                alt="The Woods ${i+1}">
+            </picture>
         </div>
         `
     }
