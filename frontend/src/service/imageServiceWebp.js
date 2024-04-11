@@ -15,13 +15,13 @@ import piticasInterno from "../../src/img/portifolio-blk/imagensSelecionadas/ref
 import piticasExterno from "../../src/img/portifolio-blk/imagensSelecionadas/reformasComerciais/webp/piticas-externo.webp";
 
 //! reformasResidenciais
-import greenVilleCasaA1 from "../../src/img/portifolio-blk/imagensSelecionadas/reformasResidenciais/webp/green-ville-casa-A-1.webp";
-import greenVilleCasaA2 from "../../src/img/portifolio-blk/imagensSelecionadas/reformasResidenciais/webp/green-ville-casa-A-2.webp";
-import greenVilleCasaA3 from "../../src/img/portifolio-blk/imagensSelecionadas/reformasResidenciais/webp/green-ville-casa-A-3.webp";
-import greenVilleCasaBFrente from "../../src/img/portifolio-blk/imagensSelecionadas/reformasResidenciais/webp/green-ville-casa-B-frente.webp";
-import greenVilleCasaB1 from "../../src/img/portifolio-blk/imagensSelecionadas/reformasResidenciais/webp/green-ville-casa-B-1.webp";
-import greenVilleCasaB2 from "../../src/img/portifolio-blk/imagensSelecionadas/reformasResidenciais/webp/green-ville-casa-B-2.webp";
-import greenVilleCasaB3 from "../../src/img/portifolio-blk/imagensSelecionadas/reformasResidenciais/webp/green-ville-casa-B-3.webp";
+import greenVilleCasaA1 from "../../src/img/portifolio-blk/imagensSelecionadas/reformasResidenciais/webp/green-ville-casa-a-1.webp";
+import greenVilleCasaA2 from "../../src/img/portifolio-blk/imagensSelecionadas/reformasResidenciais/webp/green-ville-casa-a-2.webp";
+import greenVilleCasaA3 from "../../src/img/portifolio-blk/imagensSelecionadas/reformasResidenciais/webp/green-ville-casa-a-3.webp";
+import greenVilleCasaBFrente from "../../src/img/portifolio-blk/imagensSelecionadas/reformasResidenciais/webp/green-ville-casa-b-frente.webp";
+import greenVilleCasaB1 from "../../src/img/portifolio-blk/imagensSelecionadas/reformasResidenciais/webp/green-ville-casa-b-1.webp";
+import greenVilleCasaB2 from "../../src/img/portifolio-blk/imagensSelecionadas/reformasResidenciais/webp/green-ville-casa-b-2.webp";
+import greenVilleCasaB3 from "../../src/img/portifolio-blk/imagensSelecionadas/reformasResidenciais/webp/green-ville-casa-b-3.webp";
 import rioMadeira241 from "../../src/img/portifolio-blk/imagensSelecionadas/reformasResidenciais/webp/rio-madeira-24-1.webp";
 import rioMadeira242 from "../../src/img/portifolio-blk/imagensSelecionadas/reformasResidenciais/webp/rio-madeira-24-2.webp";
 import rioMadeira243 from "../../src/img/portifolio-blk/imagensSelecionadas/reformasResidenciais/webp/rio-madeira-24-3.webp";
