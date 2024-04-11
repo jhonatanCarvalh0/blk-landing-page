@@ -11,10 +11,21 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <style>
+      * {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      body {
+        font-size: 1.2rem;
+        line-height: 1.6;
+      }
+
+      /* Inclua aqui as regras CSS que usam a fonte Montserrat e são críticas para a renderização inicial do conteúdo acima da dobra */
+    </style>
+  </head>
     <script>
       tailwind.config = {
         darkMode: "class",
