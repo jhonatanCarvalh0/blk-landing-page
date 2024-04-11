@@ -15,7 +15,7 @@ export function galleryMasonry(showSectionSeparator) {
 `;
 }
 
-function generatePictureElement(rcURL_jpeg, srcURL_webp) {
+function generatePictureElement(srcURL_jpeg, srcURL_webp) {
   return `
         <div class="inline-block image-container">
                 <picture>
