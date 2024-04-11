@@ -69,7 +69,7 @@ function generateImageContent(category){
                     <div class="numbertext">${i+1} / ${qtd}</div>
                     <picture>
                       <source srcset="${webpImageUrl}" type="image/webp">
-                      <img src="${imageUrl}" style="width:100%" alt="">
+                      <img loading="lazy" src="${imageUrl}" style="width:100%" alt="">
                     </picture>
                 </div>
             `
