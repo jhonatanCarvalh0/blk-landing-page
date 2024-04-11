@@ -1,6 +1,6 @@
 // src: #docs/components/footer/
 import { sectionViewSeparator } from "../sectionViewSeparator.js";
-import imgLogosBlkBranca from "../../img/logos-blk/blk-logo-branca.png";
+import imgLogosBlkBranca from "../../img/logos-blk/logo-blk-branca.svg";
 
 export function footer(showSectionSeparator) {
   return `

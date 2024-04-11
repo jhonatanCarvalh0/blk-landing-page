@@ -1,5 +1,5 @@
 import { sectionViewSeparator } from "../sectionViewSeparator.js";
-import blkLogoBranca from "../../img/logos-blk/blk-logo-branca.png";
+import blkLogoBranca from "../../img/logos-blk/logo-blk-branca.svg";
 
 export function navbar(showSectionSeparator) {
   return `
