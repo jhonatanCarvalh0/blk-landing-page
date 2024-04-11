@@ -1,6 +1,6 @@
 //src: https://flowbite.com/blocks/marketing/hero/
 import { sectionViewSeparator } from "../sectionViewSeparator.js";
-import blkLogoBranca from "../../img/logos-blk/blk-logo-branca.png";
+import blkLogoBranca from "../../img/logos-blk/logo-blk-branca.svg";
 
 export function header(showSectionSeparator) {
   return `
