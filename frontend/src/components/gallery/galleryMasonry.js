@@ -20,7 +20,7 @@ function generatePictureElement(srcURL_jpeg, srcURL_webp) {
         <div class="inline-block image-container">
                 <picture>
                 <source class="h-auto max-w-full rounded-lg object-cover object-center" srcset="${srcURL_webp}" type="image/webp">
-                <img class="h-auto max-w-full rounded-lg object-cover object-center" src="${srcURL_jpeg}" alt="">
+                <img loading="lazy" width="100%" class="h-auto max-w-full rounded-lg object-cover object-center" src="${srcURL_jpeg}" alt="">
             </picture>
         </div>
     `;

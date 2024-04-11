@@ -11,7 +11,7 @@ export function footer(showSectionSeparator) {
         <div class="md:flex md:justify-between">
           <div class="min-h-16 mb-6 md:mb-0">
               <a target="_blank" href="#inicio" class="flex items-center">
-                  <img src="${imgLogosBlkBranca}" class="h-16 me-3" alt="BLK Logo" />
+                  <img loading="lazy" width="100%" src="${imgLogosBlkBranca}" class="h-16 me-3" alt="BLK Logo" />
                   <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
               </a>
           </div>
