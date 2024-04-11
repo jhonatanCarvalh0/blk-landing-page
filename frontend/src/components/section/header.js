@@ -25,7 +25,7 @@ de obras civis
             </a> 
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="${blkLogoBranca}" alt="mockup">
+            <img loading="lazy" width="100%" src="${blkLogoBranca}" alt="logo BLK">
         </div>                
     </div>
 </section>
