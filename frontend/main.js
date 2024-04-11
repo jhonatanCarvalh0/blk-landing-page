@@ -10,7 +10,6 @@ import {
 import { contact } from "./src/components/section/contact.js";
 import { footer } from "./src/components/footer/footer.js";
 import { ourTeam } from "./src/components/section/ourTeam.js";
-import { injectSpeedInsights } from '@vercel/speed-insights';
 const showSectionSeparator = false;
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -24,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.innerHTML += contact(showSectionSeparator); // contact
   document.body.innerHTML += footer(showSectionSeparator); // footer
   galleryEventListener();
-  injectSpeedInsights();
 
 
 });
