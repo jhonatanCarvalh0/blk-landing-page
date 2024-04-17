@@ -16,7 +16,7 @@ function nossaEquipe(){
               <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Engenharia Civil, Arquitetura e Urbanismo, Engenharia Elétrica</p>
           </div> 
           <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                ${teamMember('../../img/time-blk/emerson.webp', 'Emerson Thiago Ferreira da Silva', ['Engenheiro Civil', 'Gestor', 'CREA: 14903D/RO'])}
+                ${teamMember('frontend/src/img/time-blk/emerson.jpg', 'Emerson Thiago Ferreira da Silva', ['Engenheiro Civil', 'Gestor', 'CREA: 14903D/RO'])}
                 ${teamMember('', 'Gustavo Portugal Ventura', ['Engenheiro Civil', 'Sócio Gestor', 'CREA: 18568D/RO'])}
                 ${teamMember('../../img/time-blk/paloma.webp', 'Paloma Nascimento', ['Arquiteta e Urbanista', 'BIM Manager', 'CAU: A279906-5'])}
                 ${teamMember('', 'Ronaldo Luã Gabriel de Souza Pena', ['Engenheiro Eletricista', 'CREA: 17238D/RO'])}
@@ -39,7 +39,7 @@ function teamMember(urlFotoMembro = '', nomeMembro = 'nome_membro', memberInfo =
 
     return `
         <div class="text-center text-gray-500 dark:text-gray-400">
-              <img class="mx-auto mb-4 w-36 h-36 rounded-full object-cover" src="${urlFotoMembro}" alt="Bonnie Avatar">
+              <img class="mx-auto mb-4 w-36 h-36 rounded-full object-cover" src=${urlFotoMembro} alt="Bonnie Avatar">
               <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <a href="#">${nomeMembro}</a>
               </h3>
