@@ -16,9 +16,9 @@ function nossaEquipe(){
               <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Engenharia Civil, Arquitetura e Urbanismo, Engenharia Elétrica</p>
           </div> 
           <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                ${teamMember('../../assets/emerson.webp', 'Emerson Thiago Ferreira da Silva', ['Engenheiro Civil', 'Gestor', 'CREA: 14903D/RO'])}
+                ${teamMember('../../img/emerson.webp', 'Emerson Thiago Ferreira da Silva', ['Engenheiro Civil', 'Gestor', 'CREA: 14903D/RO'])}
                 ${teamMember('', 'Gustavo Portugal Ventura', ['Engenheiro Civil', 'Sócio Gestor', 'CREA: 18568D/RO'])}
-                ${teamMember('../../assets/paloma.webp', 'Paloma Nascimento', ['Arquiteta e Urbanista', 'BIM Manager', 'CAU: A279906-5'])}
+                ${teamMember('../../img/paloma.webp', 'Paloma Nascimento', ['Arquiteta e Urbanista', 'BIM Manager', 'CAU: A279906-5'])}
                 ${teamMember('', 'Ronaldo Luã Gabriel de Souza Pena', ['Engenheiro Eletricista', 'CREA: 17238D/RO'])}
           </div>  
       </div>
