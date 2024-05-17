@@ -32,7 +32,7 @@ export function contact(showSectionSeparator){
       <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-zinc-950 dark:text-white">Entre em contato</h2>
           <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-          [Breve texto sobre contato]
+          Mande uma mensagem e solicite um agendamento para montarmos um orçamento
           </p>
           <form method="POST" class="space-y-8" onsubmit="window.sendMail(event)" >
             

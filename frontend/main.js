@@ -8,7 +8,7 @@ import {
   galleryEventListener,
 } from "./src/components/section/gallery.js";
 import { contact } from "./src/components/section/contact.js";
-import { footer } from "./src/components/footer/footer.js";
+import {footer, footer2} from "./src/components/footer/footer.js";
 import { ourTeam } from "./src/components/section/ourTeam.js";
 const showSectionSeparator = false;
 
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.innerHTML += ourServices(showSectionSeparator); // services
   document.body.innerHTML += gallery(showSectionSeparator); // gallery -- carousel nao funciona
   document.body.innerHTML += contact(showSectionSeparator); // contact
-  document.body.innerHTML += footer(showSectionSeparator); // footer
+  document.body.innerHTML += footer2(showSectionSeparator); // footer
   galleryEventListener();
 
 
