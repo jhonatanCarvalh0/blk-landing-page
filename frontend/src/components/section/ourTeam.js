@@ -1,6 +1,7 @@
 import { sectionViewSeparator } from "../sectionViewSeparator.js";
-import imgEmerson from "../../img/time-blk/emerson.jpg";
+import imgEmerson from "../../img/time-blk/emerson.webp";
 import imgPaloma from "../../img/time-blk/paloma.webp";
+import imgRonaldo from "../../img/time-blk/ronaldo-pena.webp";
 
 export function ourTeam(showSectionSeparator) {
   return `
@@ -23,7 +24,7 @@ function nossaEquipe() {
                   "Emerson Thiago Ferreira da Silva",
                   ["Engenheiro Civil", "Gestor", "CREA: 14903D/RO"]
                 )}
-                ${teamMember("", "Gustavo Portugal Ventura", [
+                ${teamMember(``, "Gustavo Portugal Ventura", [
                   "Engenheiro Civil",
                   "Sócio Gestor",
                   "CREA: 18568D/RO",
@@ -33,7 +34,7 @@ function nossaEquipe() {
                   "Paloma Nascimento",
                   ["Arquiteta e Urbanista", "BIM Manager", "CAU: A279906-5"]
                 )}
-                ${teamMember("", "Ronaldo Luã Gabriel de Souza Pena", [
+                ${teamMember(`${imgRonaldo} loading="eager`, "Ronaldo Luã Gabriel de Souza Pena", [
                   "Engenheiro Eletricista",
                   "CREA: 17238D/RO",
                 ])}
